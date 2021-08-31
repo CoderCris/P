@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\default.gpr</vfs_file>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\src\tests_divide.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 86" line=" 26" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\src\pkg_divide.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 49" line=" 24" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\src\pkg_divide.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\src\pkg_multiply.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\src\pkg_divide.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 49" line=" 24" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\src\pkg_divide.ads</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\src\pkg_add.ads</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

@@ -1,0 +1,2114 @@
+{
+  "spark": [
+    {
+      "name": "Pkg_Divide",
+      "sloc": [
+        {
+          "file": "pkg_divide.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Pkg_Divide.Divide",
+      "sloc": [
+        {
+          "file": "pkg_divide.ads",
+          "line": 5
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "pkg_divide.ads",
+      "line": 5,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_divide.ads",
+      "line": 5,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_divide.ads",
+      "line": 8,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_divide.ads",
+      "line": 9,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_divide.ads",
+      "line": 17,
+      "col": 6,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    }
+  ],
+  "session_map": {
+    " 1": "E:\\home\\UNI\\P3\\2021\\1-verificacion\\SPARK\\SPARK_Lab\\obj\\gnatprove\\pkg_divide__divide"
+  },
+  "proof": [
+    {
+      "file": "pkg_divide.adb",
+      "line": 17,
+      "col": 20,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 50,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 17,
+      "check_col": 20,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 21,
+      "col": 32,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 226,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 220,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 21,
+      "check_col": 32,
+      "cntexmp": {
+        "pkg_divide.adb": {
+          "previous": {
+            "26": [
+              {
+                "name": "Quotient",
+                "value": "Integer'Last",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "1073741823",
+                "kind": "variable"
+              }
+            ]
+          },
+          "current": {
+            "13": [
+              {
+                "name": "diven_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "14": [
+              {
+                "name": "disor_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "17": [
+              {
+                "name": "Dividend",
+                "value": "-1073741824",
+                "kind": "variable"
+              }
+            ],
+            "19": [
+              {
+                "name": "Divisor",
+                "value": "-1",
+                "kind": "variable"
+              }
+            ],
+            "20": [
+              {
+                "name": "Divisor",
+                "value": "-1",
+                "kind": "variable"
+              }
+            ],
+            "21": [
+              {
+                "name": "Quotient",
+                "value": "Integer'Last",
+                "kind": "variable"
+              }
+            ],
+            "22": [
+              {
+                "name": "Divisor",
+                "value": "-1",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "1073741823",
+                "kind": "variable"
+              }
+            ],
+            "25": [
+              {
+                "name": "Dividend",
+                "value": "-1073741824",
+                "kind": "variable"
+              }
+            ],
+            "26": [
+              {
+                "name": "Divisor",
+                "value": "-1",
+                "kind": "variable"
+              }
+            ]
+          }
+        },
+        "pkg_divide.ads": {
+          "previous": {
+          },
+          "current": {
+            "6": [
+              {
+                "name": "Dividend",
+                "value": "-1073741824",
+                "kind": "variable"
+              }
+            ],
+            "7": [
+              {
+                "name": "Divisor",
+                "value": "-1",
+                "kind": "variable"
+              }
+            ]
+          }
+        }
+      },
+      "msg_id": 0,
+      "session_dir": 1,
+      "how_proved": "prover"
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 22,
+      "col": 46,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 22,
+      "check_col": 46,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 22,
+      "col": 25,
+      "rule": "VC_PRECONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 21,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 21,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 37,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 37,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 22,
+      "check_col": 25,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 6,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        },
+        "Trivial": {
+          "count": 2,
+          "max_steps": 0,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 26,
+      "col": 67,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "medium",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 424,
+              "time": 5.00000000000000E-02
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 696,
+              "time": 1.10000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 26,
+      "check_col": 67,
+      "cntexmp": {
+        "pkg_divide.adb": {
+          "previous": {
+            "26": [
+              {
+                "name": "Quotient",
+                "value": "2",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "2",
+                "kind": "variable"
+              }
+            ]
+          },
+          "current": {
+            "13": [
+              {
+                "name": "diven_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "14": [
+              {
+                "name": "disor_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "17": [
+              {
+                "name": "Dividend",
+                "value": "Integer'First+3",
+                "kind": "variable"
+              }
+            ],
+            "19": [
+              {
+                "name": "Divisor",
+                "value": "-2",
+                "kind": "variable"
+              }
+            ],
+            "20": [
+              {
+                "name": "Divisor",
+                "value": "-2",
+                "kind": "variable"
+              }
+            ],
+            "21": [
+              {
+                "name": "Quotient",
+                "value": "3",
+                "kind": "variable"
+              }
+            ],
+            "22": [
+              {
+                "name": "Divisor",
+                "value": "-2",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "0",
+                "kind": "variable"
+              }
+            ],
+            "25": [
+              {
+                "name": "Dividend",
+                "value": "Integer'First+3",
+                "kind": "variable"
+              }
+            ],
+            "26": [
+              {
+                "name": "Divisor",
+                "value": "-2",
+                "kind": "variable"
+              },
+              {
+                "name": "Quotient",
+                "value": "3",
+                "kind": "variable"
+              }
+            ]
+          }
+        },
+        "pkg_divide.ads": {
+          "previous": {
+          },
+          "current": {
+            "6": [
+              {
+                "name": "Dividend",
+                "value": "Integer'First+3",
+                "kind": "variable"
+              }
+            ],
+            "7": [
+              {
+                "name": "Divisor",
+                "value": "-2",
+                "kind": "variable"
+              }
+            ]
+          }
+        }
+      },
+      "msg_id": 1,
+      "session_dir": 1,
+      "how_proved": "prover"
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 26,
+      "col": 56,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 788,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 49,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 26,
+      "check_col": 56,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 26,
+      "col": 35,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "medium",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 163,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 286,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 26,
+      "check_col": 35,
+      "cntexmp": {
+        "pkg_divide.adb": {
+          "previous": {
+          },
+          "current": {
+            "13": [
+              {
+                "name": "diven_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "14": [
+              {
+                "name": "disor_sign",
+                "value": "True",
+                "kind": "variable"
+              }
+            ],
+            "16": [
+              {
+                "name": "Quotient",
+                "value": "0",
+                "kind": "variable"
+              }
+            ],
+            "17": [
+              {
+                "name": "Dividend",
+                "value": "-1",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "19": [
+              {
+                "name": "Divisor",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "20": [
+              {
+                "name": "Divisor",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "21": [
+              {
+                "name": "Quotient",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "22": [
+              {
+                "name": "Divisor",
+                "value": "1",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "0",
+                "kind": "variable"
+              }
+            ],
+            "25": [
+              {
+                "name": "Dividend",
+                "value": "-1",
+                "kind": "variable"
+              }
+            ],
+            "26": [
+              {
+                "name": "Dividend",
+                "value": "-1",
+                "kind": "variable"
+              },
+              {
+                "name": "Divisor",
+                "value": "1",
+                "kind": "variable"
+              },
+              {
+                "name": "Quotient",
+                "value": "1",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "0",
+                "kind": "variable"
+              }
+            ]
+          }
+        },
+        "pkg_divide.ads": {
+          "previous": {
+          },
+          "current": {
+            "6": [
+              {
+                "name": "Dividend",
+                "value": "-1",
+                "kind": "variable"
+              }
+            ],
+            "7": [
+              {
+                "name": "Divisor",
+                "value": "1",
+                "kind": "variable"
+              }
+            ]
+          }
+        }
+      },
+      "msg_id": 2,
+      "session_dir": 1,
+      "how_proved": "prover"
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 26,
+      "col": 35,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "medium",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 700,
+              "time": 8.00000000000000E-02
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 2075,
+              "time": 2.20000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 26,
+      "check_col": 35,
+      "cntexmp": {
+        "pkg_divide.adb": {
+          "previous": {
+            "26": [
+              {
+                "name": "Quotient",
+                "value": "0",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "2",
+                "kind": "variable"
+              }
+            ]
+          },
+          "current": {
+            "13": [
+              {
+                "name": "diven_sign",
+                "value": "True",
+                "kind": "variable"
+              }
+            ],
+            "14": [
+              {
+                "name": "disor_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "17": [
+              {
+                "name": "Dividend",
+                "value": "2",
+                "kind": "variable"
+              }
+            ],
+            "19": [
+              {
+                "name": "Divisor",
+                "value": "-2",
+                "kind": "variable"
+              }
+            ],
+            "20": [
+              {
+                "name": "Divisor",
+                "value": "-2",
+                "kind": "variable"
+              }
+            ],
+            "21": [
+              {
+                "name": "Quotient",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "22": [
+              {
+                "name": "Divisor",
+                "value": "-2",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "0",
+                "kind": "variable"
+              }
+            ],
+            "25": [
+              {
+                "name": "Dividend",
+                "value": "2",
+                "kind": "variable"
+              }
+            ],
+            "26": [
+              {
+                "name": "Dividend",
+                "value": "2",
+                "kind": "variable"
+              },
+              {
+                "name": "Divisor",
+                "value": "-2",
+                "kind": "variable"
+              },
+              {
+                "name": "Quotient",
+                "value": "1",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "0",
+                "kind": "variable"
+              }
+            ]
+          }
+        },
+        "pkg_divide.ads": {
+          "previous": {
+          },
+          "current": {
+            "6": [
+              {
+                "name": "Dividend",
+                "value": "2",
+                "kind": "variable"
+              }
+            ],
+            "7": [
+              {
+                "name": "Divisor",
+                "value": "-2",
+                "kind": "variable"
+              }
+            ]
+          }
+        }
+      },
+      "msg_id": 3,
+      "session_dir": 1,
+      "how_proved": "prover"
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 25,
+      "col": 51,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 25,
+      "check_col": 51,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 25,
+      "col": 35,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 40,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 25,
+      "check_col": 35,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 25,
+      "col": 35,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 37,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 25,
+      "check_col": 35,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 24,
+      "col": 13,
+      "rule": "VC_LOOP_VARIANT",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 40,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 24,
+      "check_col": 13,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 20,
+      "col": 29,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 36,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 20,
+      "check_col": 29,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 31,
+      "col": 23,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 151,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 31,
+      "check_col": 23,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_divide.adb",
+      "line": 35,
+      "col": 22,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 218,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_divide.adb",
+      "check_line": 35,
+      "check_col": 22,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_divide.ads",
+      "line": 27,
+      "col": 36,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "medium",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 1134,
+              "time": 1.60000000000000E-01
+            },
+            "CVC4_CE": {
+              "result": "Timeout",
+              "steps": 2858,
+              "time": 1
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "pkg_divide.ads",
+      "check_line": 27,
+      "check_col": 36,
+      "cntexmp": {
+        "pkg_divide.adb": {
+          "previous": {
+            "26": [
+              {
+                "name": "Quotient",
+                "value": "1073741823",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "1073741821",
+                "kind": "variable"
+              }
+            ]
+          },
+          "current": {
+            "13": [
+              {
+                "name": "diven_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "14": [
+              {
+                "name": "disor_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "17": [
+              {
+                "name": "Dividend",
+                "value": "Integer'First+2",
+                "kind": "variable"
+              }
+            ],
+            "19": [
+              {
+                "name": "Divisor",
+                "value": "-1073741822",
+                "kind": "variable"
+              }
+            ],
+            "20": [
+              {
+                "name": "Divisor",
+                "value": "-1073741822",
+                "kind": "variable"
+              }
+            ],
+            "21": [
+              {
+                "name": "Quotient",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "22": [
+              {
+                "name": "Remainder",
+                "value": "1073741824",
+                "kind": "variable"
+              }
+            ],
+            "25": [
+              {
+                "name": "Dividend",
+                "value": "Integer'First+2",
+                "kind": "variable"
+              }
+            ],
+            "26": [
+              {
+                "name": "Divisor",
+                "value": "-1073741822",
+                "kind": "variable"
+              }
+            ],
+            "30": [
+              {
+                "name": "diven_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "31": [
+              {
+                "name": "Remainder",
+                "value": "-1073741821",
+                "kind": "variable"
+              }
+            ],
+            "34": [
+              {
+                "name": "disor_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ]
+          }
+        },
+        "pkg_divide.ads": {
+          "previous": {
+          },
+          "current": {
+            "6": [
+              {
+                "name": "Dividend",
+                "value": "Integer'First+2",
+                "kind": "variable"
+              }
+            ],
+            "7": [
+              {
+                "name": "Divisor",
+                "value": "-1073741822",
+                "kind": "variable"
+              }
+            ],
+            "27": [
+              {
+                "name": "Divisor",
+                "value": "-1073741822",
+                "kind": "variable"
+              },
+              {
+                "name": "Quotient",
+                "value": "1073741823",
+                "kind": "variable"
+              }
+            ]
+          }
+        }
+      },
+      "msg_id": 4,
+      "session_dir": 1,
+      "how_proved": "prover"
+    },
+    {
+      "file": "pkg_divide.ads",
+      "line": 27,
+      "col": 47,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "medium",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 547,
+              "time": 0
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 1305,
+              "time": 1.40000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_divide.ads",
+      "check_line": 27,
+      "check_col": 47,
+      "cntexmp": {
+        "pkg_divide.adb": {
+          "previous": {
+            "26": [
+              {
+                "name": "Quotient",
+                "value": "2",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "1073741823",
+                "kind": "variable"
+              }
+            ]
+          },
+          "current": {
+            "13": [
+              {
+                "name": "diven_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "14": [
+              {
+                "name": "disor_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "17": [
+              {
+                "name": "Dividend",
+                "value": "-1073741825",
+                "kind": "variable"
+              }
+            ],
+            "19": [
+              {
+                "name": "Divisor",
+                "value": "-1073741824",
+                "kind": "variable"
+              }
+            ],
+            "20": [
+              {
+                "name": "Divisor",
+                "value": "-1073741824",
+                "kind": "variable"
+              }
+            ],
+            "21": [
+              {
+                "name": "Quotient",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "22": [
+              {
+                "name": "Remainder",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "25": [
+              {
+                "name": "Dividend",
+                "value": "-1073741825",
+                "kind": "variable"
+              }
+            ],
+            "26": [
+              {
+                "name": "Divisor",
+                "value": "-1073741824",
+                "kind": "variable"
+              }
+            ],
+            "30": [
+              {
+                "name": "diven_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "31": [
+              {
+                "name": "Remainder",
+                "value": "-1073741823",
+                "kind": "variable"
+              }
+            ],
+            "34": [
+              {
+                "name": "disor_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ]
+          }
+        },
+        "pkg_divide.ads": {
+          "previous": {
+          },
+          "current": {
+            "6": [
+              {
+                "name": "Dividend",
+                "value": "-1073741825",
+                "kind": "variable"
+              }
+            ],
+            "7": [
+              {
+                "name": "Divisor",
+                "value": "-1073741824",
+                "kind": "variable"
+              }
+            ],
+            "27": [
+              {
+                "name": "Divisor",
+                "value": "-1073741824",
+                "kind": "variable"
+              },
+              {
+                "name": "Quotient",
+                "value": "2",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "-1073741823",
+                "kind": "variable"
+              }
+            ]
+          }
+        }
+      },
+      "msg_id": 5,
+      "session_dir": 1,
+      "how_proved": "prover"
+    },
+    {
+      "file": "pkg_divide.ads",
+      "line": 26,
+      "col": 45,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_divide.ads",
+      "check_line": 26,
+      "check_col": 45,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_divide.ads",
+      "line": 27,
+      "col": 17,
+      "rule": "VC_POSTCONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "Pkg_Divide.Divide",
+        "sloc": [
+          {
+            "file": "pkg_divide.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 3651,
+              "time": 7.80000000000000E-01
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 434,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        }
+      ],
+      "check_file": "pkg_divide.ads",
+      "check_line": 27,
+      "check_col": 17,
+      "cntexmp": {
+        "pkg_divide.adb": {
+          "previous": {
+            "26": [
+              {
+                "name": "Quotient",
+                "value": "-1",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "0",
+                "kind": "variable"
+              }
+            ]
+          },
+          "current": {
+            "13": [
+              {
+                "name": "diven_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "14": [
+              {
+                "name": "disor_sign",
+                "value": "True",
+                "kind": "variable"
+              }
+            ],
+            "17": [
+              {
+                "name": "Dividend",
+                "value": "-1",
+                "kind": "variable"
+              }
+            ],
+            "19": [
+              {
+                "name": "Divisor",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "20": [
+              {
+                "name": "Divisor",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "21": [
+              {
+                "name": "Quotient",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "22": [
+              {
+                "name": "Remainder",
+                "value": "0",
+                "kind": "variable"
+              }
+            ],
+            "25": [
+              {
+                "name": "Dividend",
+                "value": "-1",
+                "kind": "variable"
+              }
+            ],
+            "26": [
+              {
+                "name": "Divisor",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "30": [
+              {
+                "name": "diven_sign",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "31": [
+              {
+                "name": "Remainder",
+                "value": "0",
+                "kind": "variable"
+              }
+            ],
+            "34": [
+              {
+                "name": "disor_sign",
+                "value": "True",
+                "kind": "variable"
+              }
+            ],
+            "35": [
+              {
+                "name": "Quotient",
+                "value": "1",
+                "kind": "variable"
+              }
+            ]
+          }
+        },
+        "pkg_divide.ads": {
+          "previous": {
+          },
+          "current": {
+            "6": [
+              {
+                "name": "Dividend",
+                "value": "-1",
+                "kind": "variable"
+              }
+            ],
+            "7": [
+              {
+                "name": "Divisor",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "27": [
+              {
+                "name": "Dividend",
+                "value": "-1",
+                "kind": "variable"
+              },
+              {
+                "name": "Divisor",
+                "value": "1",
+                "kind": "variable"
+              },
+              {
+                "name": "Quotient",
+                "value": "1",
+                "kind": "variable"
+              },
+              {
+                "name": "Remainder",
+                "value": "0",
+                "kind": "variable"
+              }
+            ]
+          }
+        }
+      },
+      "msg_id": 6,
+      "session_dir": 1,
+      "how_proved": "prover"
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Pkg_Divide",
+          "sloc": [
+            {
+              "file": "pkg_divide.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Pkg_Add.Add",
+            "sloc": [
+              {
+                "file": "pkg_add.ads",
+                "line": 3
+              }
+            ]
+          }
+        },
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Pkg_Subtract.Subtract",
+            "sloc": [
+              {
+                "file": "pkg_subtract.ads",
+                "line": 3
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Pkg_Divide.Divide",
+          "sloc": [
+            {
+              "file": "pkg_divide.ads",
+              "line": 5
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "gnatwhy3.transformations.inline_trivial": 1.09375000000000E+00,
+    "codepeer results": 9.45499981753528E-04,
+    "init_why_sections": 1.34529999922961E-03,
+    "gnatwhy3.transformations.detect_polymorphism": 0.00000000000000E+00,
+    "globals/properties (advanced)": 2.21380009315908E-03,
+    "gnatwhy3.transformations.eliminate_literal": 0.00000000000000E+00,
+    "gnatwhy3.run_vcs": 2.03125000000000E-01,
+    "gnatwhy3.transformations.eliminate_algebraic_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_definition_if_poly": 0.00000000000000E+00,
+    "flow analysis": 8.54269973933697E-03,
+    "gnatwhy3.transformations.simplify_formula": 0.00000000000000E+00,
+    "marking": 1.05489999987185E-03,
+    "translation of standard": 7.90040008723736E-03,
+    "gnatwhy3.register_vcs": 1.56250000000000E-02,
+    "gnatwhy3.transformations.eliminate_epsilon": 0.00000000000000E+00,
+    "globals (basic)": 1.25860003754497E-03,
+    "gnatwhy3.schedule_vcs": 0.00000000000000E+00,
+    "gnatwhy3.transformations.prepare_for_counterexmp": 1.56250000000000E-02,
+    "gnatwhy3.save_session": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_inductive": 1.56250000000000E-02,
+    "gnatwhy3.transformations.encoding_smt_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_unused_hypo": 9.37500000000000E-02,
+    "gnatwhy3.transformations.eliminate_builtin": 0.00000000000000E+00,
+    "gnatwhy3.transformations.discriminate_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.init": 2.50000000000000E-01
+  }
+}

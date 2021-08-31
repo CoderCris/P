@@ -1,0 +1,2 @@
+searching_tests.adb:60:06: identifier expected
+searching_tests.adb:65:01: missing "begin" for procedure "Searching_tests" at line 6

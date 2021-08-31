@@ -1,0 +1,85 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -g
+A -fstack-check=specific
+A -gnata
+A -gnato
+A -gnat12
+A -gnatwa
+A -gnateE
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U pkg_divide%b		pkg_divide.adb		00c808eb NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W pkg_add%s		pkg_add.adb		pkg_add.ali
+W pkg_subtract%s	pkg_subtract.adb	pkg_subtract.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+U pkg_divide%s		pkg_divide.ads		b91c630a EE NE OO PK
+
+D ada.ads		20200228061810 76789da1 ada%s
+D a-except.ads		20200228061810 a7106115 ada.exceptions%s
+D a-ioexce.ads		20200228061810 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200228061810 119b8fb3 ada.streams%s
+D a-tags.ads		20200228061810 edddc8f0 ada.tags%s
+D a-textio.ads		20200228061810 aef4d56d ada.text_io%s
+D a-unccon.ads		20200228061810 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200228061810 5ab55268 interfaces%s
+D i-cstrea.ads		20200228061810 e53d8b8e interfaces.c_streams%s
+D pkg_add.ads		20210803151254 37b0d375 pkg_add%s
+D pkg_divide.ads	20190924162314 b91c630a pkg_divide%s
+D pkg_divide.adb	20210810162426 4e1c90da pkg_divide%b
+D pkg_subtract.ads	20210803152244 6e8cfd23 pkg_subtract%s
+D system.ads		20200228061810 32a08138 system%s
+D s-assert.ads		20200228061810 cd8d2c94 system.assertions%s
+D s-crtl.ads		20200228061810 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200228061810 54135002 system.exception_table%s
+D s-ficobl.ads		20200228061810 078245e4 system.file_control_block%s
+D s-imgint.ads		20200228061810 02dbe0c2 system.img_int%s
+D s-parame.ads		20200228061810 4752c4cb system.parameters%s
+D s-secsta.ads		20200327060540 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200228061810 a7318a92 system.soft_links%s
+D s-stache.ads		20200228061810 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200228061810 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200228061810 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200228061810 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200319060540 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200228061810 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [divide pkg_divide 5 14 none]
+G r c none [divide pkg_divide 5 14 none] [add pkg_add 3 13 none]
+G r c none [divide pkg_divide 5 14 none] [subtract pkg_subtract 3 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|3r6 3r25
+X 6 a-textio.ads
+57K13*Text_IO 727e16 12|3w10 3r29
+465U14*Put 12|37s7 38s7 39s7 40s7
+508U14*Put_Line 12|36s7
+X 10 pkg_add.ads
+1K9*Pkg_Add 16e12 12|1w6 21r25
+3V13*Add{integer} 12|21s33
+X 11 pkg_divide.ads
+1K9*Pkg_Divide 21l5 21e15 12|5b14 43l5 43t15
+2i4*Last_Quotient{integer} 12|33m7
+3i4*Last_Remainder{integer} 12|34m7
+5U14*Divide 6>7 7>7 8<7 9<7 12|7b14 41l8 41t14
+6i7 Dividend{integer} 12|8b7 13r40 17r24
+7i7 Divisor{integer} 12|9b7 14r40 19r10 20r33 22r50
+8i7 Quotient{integer} 12|10b7 16m7 21m13 21r37 31m10 31r23 33r24 38r25
+9i7 Remainder{integer} 12|11b7 17m7 20r16 22r35 22m60 27m10 27r24 34r25 40r25
+X 12 pkg_divide.adb
+13b7 diven_sign{boolean} 26r14 30r10
+14b7 disor_sign{boolean} 30r25
+X 13 pkg_subtract.ads
+1K9*Pkg_Subtract 12|2w6 22r13 13|19e17
+3U14*Subtract 12|22s26
+

@@ -1,0 +1,38 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -g
+A -fstack-check=specific
+A -gnata
+A -gnato
+A -gnat12
+A -gnatwa
+A -gnateE
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U pkg_add%b		pkg_add.adb		83216a6c NE OO PK
+Z system.assertions%s	s-assert.adb		s-assert.ali
+
+U pkg_add%s		pkg_add.ads		37b0d375 EE NE OO PK
+
+D ada.ads		20200228061810 76789da1 ada%s
+D a-unccon.ads		20200228061810 0e9b276f ada.unchecked_conversion%s
+D pkg_add.ads		20210803151254 37b0d375 pkg_add%s
+D pkg_add.adb		20210803151046 b491b919 pkg_add%b
+D system.ads		20200228061810 32a08138 system%s
+D s-assert.ads		20200228061810 cd8d2c94 system.assertions%s
+D s-exctab.ads		20200228061810 54135002 system.exception_table%s
+D s-stalib.ads		20200228061810 6b7a13f2 system.standard_library%s
+G a e
+G c Z s b [add pkg_add 3 13 none]
+X 3 pkg_add.ads
+1K9*Pkg_Add 16l5 16e12 4|1b14 10l5 10t12
+3V13*Add{integer} 4>7 5>7 9r19 14r18 4|3b13 8l8 8t11
+4i7 First_Operand{integer} 9r34 10r21 11r25 12r23 13r25 14r31 4|4b7 7r14
+5i7 Second_Operand{integer} 9r49 10r48 11r57 12r50 13r58 14r47 4|5b7 7r30
+

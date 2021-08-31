@@ -1,0 +1,3 @@
+pkg_add.ads:12:22: if expression must be parenthesized
+pkg_add.ads:13:50: unrecognized attribute "Fist"
+pkg_add.ads:13:50: possible misspelling of "First"

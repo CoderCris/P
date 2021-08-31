@@ -1,0 +1,14 @@
+20210809144732
+-c
+-x
+ada
+-gnatA
+-g
+-fstack-check
+-gnata
+-gnato
+-gnat12
+-gnatwa
+-gnateE
+-gnatc
+-gnates=E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\gnatprove\85a74aac.tmp

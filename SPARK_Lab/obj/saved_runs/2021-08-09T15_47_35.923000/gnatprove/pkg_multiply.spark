@@ -1,0 +1,908 @@
+{
+  "spark": [
+    {
+      "name": "Pkg_Multiply",
+      "sloc": [
+        {
+          "file": "pkg_multiply.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Pkg_Multiply.Multiply",
+      "sloc": [
+        {
+          "file": "pkg_multiply.ads",
+          "line": 3
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "pkg_multiply.ads",
+      "line": 6,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_multiply.ads",
+      "line": 10,
+      "col": 7,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_multiply.ads",
+      "line": 11,
+      "col": 7,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    }
+  ],
+  "session_map": {
+    " 1": "E:\\home\\UNI\\P3\\2021\\1-verificacion\\SPARK\\SPARK_Lab\\obj\\gnatprove\\pkg_multiply__multiply"
+  },
+  "proof": [
+    {
+      "file": "pkg_multiply.adb",
+      "line": 14,
+      "col": 44,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 36,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.adb",
+      "check_line": 14,
+      "check_col": 44,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply.adb",
+      "line": 14,
+      "col": 30,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+          },
+          "transformations": {
+            "trivial_true": [
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 39,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 416,
+              "time": 8.00000000000000E-02
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 420,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.adb",
+      "check_line": 14,
+      "check_col": 30,
+      "cntexmp": {
+        "pkg_multiply.adb": {
+          "previous": {
+          },
+          "current": {
+            "11": [
+              {
+                "name": "Result",
+                "value": "0",
+                "kind": "variable"
+              }
+            ],
+            "12": [
+              {
+                "name": "Second_Operand",
+                "value": "2",
+                "kind": "variable"
+              }
+            ],
+            "13": [
+              {
+                "name": "Result",
+                "value": "Integer'Last",
+                "kind": "variable"
+              },
+              {
+                "name": "Second_Operand",
+                "value": "2",
+                "kind": "variable"
+              },
+              {
+                "name": "x",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "14": [
+              {
+                "name": "First_Operand",
+                "value": "1",
+                "kind": "variable"
+              },
+              {
+                "name": "Result",
+                "value": "Integer'Last",
+                "kind": "variable"
+              }
+            ]
+          }
+        },
+        "pkg_multiply.ads": {
+          "previous": {
+          },
+          "current": {
+            "4": [
+              {
+                "name": "First_Operand",
+                "value": "1",
+                "kind": "variable"
+              }
+            ],
+            "5": [
+              {
+                "name": "Second_Operand",
+                "value": "2",
+                "kind": "variable"
+              }
+            ]
+          }
+        }
+      },
+      "msg_id": 0,
+      "session_dir": 1,
+      "how_proved": "prover"
+    },
+    {
+      "file": "pkg_multiply.adb",
+      "line": 13,
+      "col": 24,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 38,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.adb",
+      "check_line": 13,
+      "check_col": 24,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply.adb",
+      "line": 19,
+      "col": 30,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 54,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.adb",
+      "check_line": 19,
+      "check_col": 30,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply.ads",
+      "line": 28,
+      "col": 38,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 1988,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.ads",
+      "check_line": 28,
+      "check_col": 38,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply.ads",
+      "line": 17,
+      "col": 48,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.ads",
+      "check_line": 17,
+      "check_col": 48,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply.ads",
+      "line": 20,
+      "col": 16,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.ads",
+      "check_line": 20,
+      "check_col": 16,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply.ads",
+      "line": 20,
+      "col": 51,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.ads",
+      "check_line": 20,
+      "check_col": 51,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply.ads",
+      "line": 20,
+      "col": 50,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.ads",
+      "check_line": 20,
+      "check_col": 50,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply.ads",
+      "line": 23,
+      "col": 16,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.ads",
+      "check_line": 23,
+      "check_col": 16,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply.ads",
+      "line": 23,
+      "col": 50,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.ads",
+      "check_line": 23,
+      "check_col": 50,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply.ads",
+      "line": 26,
+      "col": 46,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.ads",
+      "check_line": 26,
+      "check_col": 46,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply.ads",
+      "line": 26,
+      "col": 45,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.ads",
+      "check_line": 26,
+      "check_col": 45,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply.ads",
+      "line": 28,
+      "col": 15,
+      "rule": "VC_POSTCONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "Pkg_Multiply.Multiply",
+        "sloc": [
+          {
+            "file": "pkg_multiply.ads",
+            "line": 3
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 635,
+              "time": 8.00000000000000E-02
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 996,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply.ads",
+      "check_line": 28,
+      "check_col": 15,
+      "cntexmp": {
+        "pkg_multiply.adb": {
+          "previous": {
+          },
+          "current": {
+            "11": [
+              {
+                "name": "Result",
+                "value": "0",
+                "kind": "variable"
+              }
+            ],
+            "12": [
+              {
+                "name": "Second_Operand",
+                "value": "3",
+                "kind": "variable"
+              }
+            ],
+            "13": [
+              {
+                "name": "Result",
+                "value": "3",
+                "kind": "variable"
+              },
+              {
+                "name": "x",
+                "value": "3",
+                "kind": "variable"
+              }
+            ],
+            "14": [
+              {
+                "name": "Result",
+                "value": "3",
+                "kind": "variable"
+              }
+            ],
+            "18": [
+              {
+                "name": "First_Operand",
+                "value": "2",
+                "kind": "variable"
+              }
+            ]
+          }
+        },
+        "pkg_multiply.ads": {
+          "previous": {
+          },
+          "current": {
+            "4": [
+              {
+                "name": "First_Operand",
+                "value": "2",
+                "kind": "variable"
+              }
+            ],
+            "5": [
+              {
+                "name": "Second_Operand",
+                "value": "3",
+                "kind": "variable"
+              }
+            ],
+            "28": [
+              {
+                "name": "First_Operand",
+                "value": "2",
+                "kind": "variable"
+              },
+              {
+                "name": "Result",
+                "value": "5",
+                "kind": "variable"
+              },
+              {
+                "name": "Second_Operand",
+                "value": "3",
+                "kind": "variable"
+              }
+            ]
+          }
+        }
+      },
+      "msg_id": 1,
+      "session_dir": 1,
+      "how_proved": "prover"
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Pkg_Multiply",
+          "sloc": [
+            {
+              "file": "pkg_multiply.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "Pkg_Add.Add",
+            "sloc": [
+              {
+                "file": "pkg_add.ads",
+                "line": 3
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Pkg_Multiply.Multiply",
+          "sloc": [
+            {
+              "file": "pkg_multiply.ads",
+              "line": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "gnatwhy3.transformations.inline_trivial": 6.56250000000000E-01,
+    "codepeer results": 9.05999986571260E-05,
+    "init_why_sections": 8.10500001534820E-04,
+    "gnatwhy3.transformations.detect_polymorphism": 0.00000000000000E+00,
+    "globals/properties (advanced)": 7.82300019636750E-04,
+    "gnatwhy3.transformations.eliminate_literal": 0.00000000000000E+00,
+    "gnatwhy3.run_vcs": 1.87500000000000E-01,
+    "gnatwhy3.transformations.eliminate_algebraic_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_definition_if_poly": 1.56250000000000E-02,
+    "flow analysis": 2.45109992101789E-03,
+    "gnatwhy3.transformations.simplify_formula": 0.00000000000000E+00,
+    "marking": 5.01999980770051E-04,
+    "translation of standard": 4.82580019161105E-03,
+    "gnatwhy3.register_vcs": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_epsilon": 0.00000000000000E+00,
+    "globals (basic)": 4.55900008091703E-04,
+    "gnatwhy3.schedule_vcs": 0.00000000000000E+00,
+    "gnatwhy3.transformations.prepare_for_counterexmp": 0.00000000000000E+00,
+    "gnatwhy3.save_session": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_inductive": 1.56250000000000E-02,
+    "gnatwhy3.transformations.encoding_smt_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_unused_hypo": 3.12500000000000E-02,
+    "gnatwhy3.transformations.eliminate_builtin": 0.00000000000000E+00,
+    "gnatwhy3.transformations.discriminate_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.init": 2.81250000000000E-01
+  }
+}

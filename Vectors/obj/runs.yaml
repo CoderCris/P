@@ -1,0 +1,18 @@
+'2021-08-28T15:21:45.284000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    searching.ads:24:17: medium: postcondition might fail, cannot prove Table(Pos_Minimum''Result)
+    <= Table(J) (e.g. when J = 1 and Pos_Minimum''Result = 0 and Table = (0 => 0,
+    others => -1) and Table''First = 0 and Table''Last = 1)[#0]
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-08-28T15:21:45.284000'

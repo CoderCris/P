@@ -1,0 +1,8 @@
+pkg_divide.adb:21:32: medium: precondition might fail, cannot prove First_Operand <= Integer'Last - Second_Operand (e.g. when Quotient = Integer'Last)[#0]
+pkg_divide.adb:25:35: medium: loop invariant might fail in first iteration, cannot prove Remainder in 0..abs(Divisor) (e.g. when Divisor = 1 and Remainder = 2)[#4]
+pkg_divide.adb:26:35: medium: loop invariant might fail in first iteration, cannot prove Dividend = Remainder + Quotient * Divisor (e.g. when Dividend = -1 and Divisor = 1 and Quotient = 1 and Remainder = 0)[#2]
+pkg_divide.adb:26:35: medium: loop invariant might not be preserved by an arbitrary iteration, cannot prove Dividend = Remainder + Quotient * Divisor (e.g. when Dividend = 2 and Divisor = -2 and Quotient = 1 and Remainder = 0)[#3]
+pkg_divide.adb:26:67: medium: overflow check might fail (e.g. when Divisor = -2 and Quotient = 3)[#1]
+pkg_divide.ads:25:17: medium: postcondition might fail, cannot prove Dividend = Divisor * Quotient + Remainder (e.g. when Dividend = -1 and Divisor = 1 and Quotient = 1 and Remainder = 0)[#7]
+pkg_divide.ads:25:36: medium: overflow check might fail (e.g. when Divisor = -1073741822 and Quotient = 1073741823)[#5]
+pkg_divide.ads:25:47: medium: overflow check might fail (e.g. when Divisor = -1073741824 and Quotient = 2 and Remainder = -1073741823)[#6]

@@ -1,0 +1,3 @@
+searching.ads:23:42: expected type "Standard.Integer"
+searching.ads:23:42: found type "Standard.Boolean"
+searching.ads:23:54: missing ")"

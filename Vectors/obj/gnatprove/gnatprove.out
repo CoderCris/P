@@ -1,0 +1,27 @@
+Summary of SPARK analysis
+=========================
+
+--------------------------------------------------------------------------------------------
+SPARK Analysis results        Total       Flow   CodePeer     Provers   Justified   Unproved
+--------------------------------------------------------------------------------------------
+Data Dependencies                 2          2          .           .           .          .
+Flow Dependencies                 2          2          .           .           .          .
+Initialization                    .          .          .           .           .          .
+Non-Aliasing                      .          .          .           .           .          .
+Run-time Checks                   9          .          .    9 (CVC4)           .          .
+Assertions                        4          .          .    4 (CVC4)           .          .
+Functional Contracts              2          .          .    1 (CVC4)           .          1
+LSP Verification                  .          .          .           .           .          .
+Termination                       1          .          .    1 (CVC4)           .          .
+Concurrency                       .          .          .           .           .          .
+--------------------------------------------------------------------------------------------
+Total                            20    4 (20%)          .    15 (75%)           .     1 (5%)
+
+
+max steps used for successful proof: 1
+
+Analyzed 1 unit
+in unit searching, 3 subprograms and packages out of 3 analyzed
+  Searching at searching.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Searching.Minimum at searching.ads:6 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (5 checks)
+  Searching.Pos_Minimum at searching.ads:15 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 10 checks out of 11 proved

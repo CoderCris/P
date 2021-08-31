@@ -1,0 +1,6 @@
+pkg_multiply.adb:14:30: medium: precondition might fail, cannot prove First_Operand <= Integer'Last - Second_Operand (e.g. when First_Operand = 1 and Result = Integer'Last)[#0]
+pkg_multiply.adb:16:35: medium: loop invariant might fail in first iteration, cannot prove Result = x * Second_Operand (e.g. when Result = 1 and Second_Operand = 2 and x = 1)[#2]
+pkg_multiply.adb:16:35: medium: loop invariant might not be preserved by an arbitrary iteration, cannot prove Result = x * Second_Operand (e.g. when Result = 715827885 and Second_Operand = 715827882 and x = 3)[#3]
+pkg_multiply.adb:16:46: medium: overflow check might fail (e.g. when Second_Operand = -1073741825 and x = 2)[#1]
+pkg_multiply.adb:19:30: medium: overflow check might fail (e.g. when Result = Integer'First)[#4]
+pkg_multiply.ads:28:15: medium: postcondition might fail, cannot prove Result = First_Operand * Second_Operand (e.g. when First_Operand = 3 and Result = 4 and Second_Operand = 2)[#5]

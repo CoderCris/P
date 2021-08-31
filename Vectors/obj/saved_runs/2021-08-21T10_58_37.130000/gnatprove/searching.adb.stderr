@@ -1,0 +1,5 @@
+searching.adb:6:28: medium: range check might fail (e.g. when Table = (others => -1)) [possible explanation: precondition of subprogram at searching.ads:6 should mention Table][#2]
+searching.adb:14:23: medium: range check might fail (e.g. when J = 1 and Table = (0 => 0, others => -1) and minVal = 0) [possible explanation: precondition of subprogram at searching.ads:6 should mention Table][#3]
+searching.adb:33:19: medium: array index check might fail (e.g. when J = -1 and minPos = 0)[#0]
+searching.adb:33:30: medium: array index check might fail (e.g. when minPos = 6) [possible explanation: loop at line 32 should mention minPos in a loop invariant][#1]
+searching.ads:14:16: medium: postcondition might fail (e.g. when Minimum'Result = 0 and Table = (others => 1))[#4]

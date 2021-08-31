@@ -1,0 +1,41 @@
+V "GNAT Lib v2020"
+A -x
+A ada
+A -gnatA
+A -gnatc
+P GP FX
+
+RN
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U searching%b		searching.adb		9f65e7b3 OO PK
+
+U searching%s		searching.ads		1b197c0c OO PK
+
+D searching.ads		20210820102536 1b197c0c searching%s
+D searching.adb		20210820102208 847c9bbf searching%b
+D system.ads		20200228061810 32a08138 system%s
+G a Z
+X 1 searching.ads
+1K9*Searching 46l5 46e14 2|1b14 41l5 41t14
+3A9*T_Table(integer)<integer> 6r30 2|3r30
+6V13*Minimum{integer} 6>22 10r20 12r46 2|3b13 20l8 20t15
+6a22 Table{3A9} 10r38 11r15 12r31 12r63 2|3b22 6r27 6r33 9r16 10r13 11r23
+. 15r26 16r15
+12i26 J{integer} 12r69
+X 2 searching.adb
+6i7 minVal{natural} 10r24 11m13 16r27 19r14
+9i11 J{integer} 10r19 11r29 15r41
+15i21 K{integer} 16r21
+
+QQ SPARKVERSION SPARK Community 2020 (20200429)
+GG EK_DIRECT_CALLS searching__minimum 0
+GG EK_GLOBALS searching__minimum local FALSE E_FUNCTION FALSE ORIGIN_FLOW 1 searching proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS searching 0
+GG EK_GLOBALS searching local FALSE E_PACKAGE TRUE ORIGIN_FLOW 0 proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_FLOW_SCOPE searching__minimum FALSE FALSE FALSE FALSE TRUE searching VISIBLE_PART
+GG EK_FLOW_SCOPE searching TRUE FALSE FALSE FALSE FALSE __standard
+GG EK_END_MARKER

@@ -1,0 +1,39 @@
+V "GNAT Lib v2020"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U searching%b		searching.adb		94f84ca1 NE OO PK
+
+U searching%s		searching.ads		d4b8aed7 EE NE OO PK
+
+D searching.ads		20210821082314 d4b8aed7 searching%s
+D searching.adb		20210821082410 4040e276 searching%b
+D system.ads		20200228061810 32a08138 system%s
+G a e
+G c Z s b [minimum searching 6 13 none]
+G c Z s b [pos_minimum searching 15 12 none]
+G c Z s s [t_tableIP searching 3 9 none]
+X 1 searching.ads
+1K9*Searching 48l5 48e14 2|1b14 56l5 56t14
+3A9*T_Table(integer)<integer> 6r30 15r33 2|3r30 23r34
+6V13*Minimum{integer} 6>22 10r20 12r46 2|3b13 20l8 20t15
+6a22 Table{3A9} 10r38 11r15 12r31 12r63 2|3b22 6r27 6r33 9r16 10r13 11r23
+. 15r26 16r15
+12i26 J{integer} 12r69
+15V12*Pos_Minimum{natural} 15>25 2|23b13 36l8 36t19
+15a25 Table{3A9} 2|23b26 26r27 27r22 29r18 30r13 30r24
+X 2 searching.adb
+6i7 minVal{natural} 10r24 11m13 16r27 19r14
+9i11 J{integer} 10r19 11r29 15r41
+15i21 K{integer} 16r21
+26i7 minPos{integer} 30r30 31m13 35r14
+27i7 J{integer} 29r13 30r19 31r22 33m10 33r15
+

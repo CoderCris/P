@@ -1,0 +1,2 @@
+pkg_divide.adb:25:26: expected type "Standard.Integer"
+pkg_divide.adb:25:26: found an access type

@@ -1,0 +1,76 @@
+V "GNAT Lib v2020"
+M P W=b
+A -gnatA
+A -g
+A -fstack-check=specific
+A -gnata
+A -gnato
+A -gnat12
+A -gnatwa
+A -gnateE
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U tests_subtract%b	tests_subtract.adb	ff557a38 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W pkg_subtract%s	pkg_subtract.adb	pkg_subtract.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+
+D ada.ads		20200228061810 76789da1 ada%s
+D a-except.ads		20200228061810 a7106115 ada.exceptions%s
+D a-ioexce.ads		20200228061810 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200228061810 119b8fb3 ada.streams%s
+D a-tags.ads		20200228061810 edddc8f0 ada.tags%s
+D a-textio.ads		20200228061810 aef4d56d ada.text_io%s
+D a-unccon.ads		20200228061810 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200228061810 5ab55268 interfaces%s
+D i-cstrea.ads		20200228061810 e53d8b8e interfaces.c_streams%s
+D pkg_subtract.ads	20210803152244 6e8cfd23 pkg_subtract%s
+D system.ads		20200228061810 32a08138 system%s
+D s-assert.ads		20200228061810 cd8d2c94 system.assertions%s
+D s-crtl.ads		20200228061810 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200228061810 54135002 system.exception_table%s
+D s-ficobl.ads		20200228061810 078245e4 system.file_control_block%s
+D s-parame.ads		20200228061810 4752c4cb system.parameters%s
+D s-secsta.ads		20200327060540 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200228061810 a7318a92 system.soft_links%s
+D s-stache.ads		20200228061810 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200228061810 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200228061810 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200228061810 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200319060540 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200228061810 1b7d22d2 system.wch_con%s
+D tests_subtract.adb	20190924163014 3f2d5276 tests_subtract%b
+G a e
+G c Z b b [tests_subtract standard 7 11 none]
+G r c none [tests_subtract standard 7 11 none] [subtract pkg_subtract 3 14 none]
+X 1 ada.ads
+16K9*Ada 20e8 25|4r6 4r24
+X 6 a-textio.ads
+57K13*Text_IO 727e16 25|4w10 4r28
+465U14*Put 25|12s7 23s7 34s7 45s7 56s7 67s7
+508U14*Put_Line 25|17s7 28s7 39s7 50s7 61s7 72s7 76s4
+X 10 pkg_subtract.ads
+1K9*Pkg_Subtract 19e17 25|5w6 5r24
+3U14*Subtract 25|14s7 25s7 36s7 47s7 58s7 69s7
+X 25 tests_subtract.adb
+7U11*Tests_Subtract 7b11 83l5 83t19
+9U14 Test_1 9b14 18l8 18t14 77s4
+10i7 Result{integer} 14m23 15r22
+20U14 Test_2 20b14 29l8 29t14 78s4
+21i7 Result{integer} 25m24 26r22
+31U14 Test_3 31b14 40l8 40t14 79s4
+32i7 Result{integer} 36m24 37r22
+42U14 Test_4 42b14 51l8 51t14 80s4
+43i7 Result{integer} 47m25 48r22
+53U14 Test_5 53b14 62l8 62t14 81s4
+54i7 Result{integer} 58m23 59r22
+64U14 Test_6 64b14 73l8 73t14 82s4
+65i7 Result{integer} 69m23 70r22
+

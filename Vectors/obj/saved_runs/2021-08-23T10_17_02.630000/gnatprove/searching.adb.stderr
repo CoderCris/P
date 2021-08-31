@@ -1,0 +1,2 @@
+searching.adb:29:32: medium: range check might fail (e.g. when Table = (others => -1) and Table'First = -1 and Table'Last = -2)[#0]
+searching.adb:36:16: medium: overflow check might fail (e.g. when J = Natural'Last)[#1]

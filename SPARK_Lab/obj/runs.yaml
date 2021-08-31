@@ -1,0 +1,207 @@
+'2021-08-12T14:21:31.791000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    pkg_divide.adb:3:09: warning: no entities of "Ada.Text_IO" are referenced
+
+    pkg_divide.adb:3:21: warning: use clause for package "Text_IO" has no effect
+
+    pkg_divide.adb:21:32: medium: precondition might fail, cannot prove First_Operand
+    <= Integer''Last - Second_Operand (e.g. when Quotient = Integer''Last)[#0]
+
+    pkg_divide.adb:25:35: medium: loop invariant might fail in first iteration, cannot
+    prove Remainder in 0..abs(Divisor) (e.g. when Divisor = 1 and Remainder = 2)[#4]
+
+    pkg_divide.adb:26:35: medium: loop invariant might fail in first iteration, cannot
+    prove Dividend = Remainder + Quotient * Divisor (e.g. when Dividend = -1 and Divisor
+    = 1 and Quotient = 1 and Remainder = 0)[#2]
+
+    pkg_divide.adb:26:35: medium: loop invariant might not be preserved by an arbitrary
+    iteration, cannot prove Dividend = Remainder + Quotient * Divisor (e.g. when Dividend
+    = 2 and Divisor = -2 and Quotient = 1 and Remainder = 0)[#3]
+
+    pkg_divide.adb:26:67: medium: overflow check might fail (e.g. when Divisor = -2
+    and Quotient = 3)[#1]
+
+    pkg_divide.ads:25:17: medium: postcondition might fail, cannot prove Dividend
+    = Divisor * Quotient + Remainder (e.g. when Dividend = -1 and Divisor = 1 and
+    Quotient = 1 and Remainder = 0)[#7]
+
+    pkg_divide.ads:25:36: medium: overflow check might fail (e.g. when Divisor = -1073741822
+    and Quotient = 1073741823)[#5]
+
+    pkg_divide.ads:25:47: medium: overflow check might fail (e.g. when Divisor = -1073741824
+    and Quotient = 2 and Remainder = -1073741823)[#6]
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-08-12T14:21:31.791000'
+'2021-08-12T14:21:50.901000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    pkg_divide.adb:21:32: medium: precondition might fail, cannot prove First_Operand
+    <= Integer''Last - Second_Operand (e.g. when Quotient = Integer''Last)[#0]
+
+    pkg_divide.adb:25:35: medium: loop invariant might fail in first iteration, cannot
+    prove Remainder in 0..abs(Divisor) (e.g. when Divisor = 1 and Remainder = 2)[#4]
+
+    pkg_divide.adb:26:35: medium: loop invariant might fail in first iteration, cannot
+    prove Dividend = Remainder + Quotient * Divisor (e.g. when Dividend = -1 and Divisor
+    = 1 and Quotient = 1 and Remainder = 0)[#2]
+
+    pkg_divide.adb:26:35: medium: loop invariant might not be preserved by an arbitrary
+    iteration, cannot prove Dividend = Remainder + Quotient * Divisor (e.g. when Dividend
+    = 2 and Divisor = -2 and Quotient = 1 and Remainder = 0)[#3]
+
+    pkg_divide.adb:26:67: medium: overflow check might fail (e.g. when Divisor = -2
+    and Quotient = 3)[#1]
+
+    pkg_divide.ads:25:17: medium: postcondition might fail, cannot prove Dividend
+    = Divisor * Quotient + Remainder (e.g. when Dividend = -1 and Divisor = 1 and
+    Quotient = 1 and Remainder = 0)[#7]
+
+    pkg_divide.ads:25:36: medium: overflow check might fail (e.g. when Divisor = -1073741822
+    and Quotient = 1073741823)[#5]
+
+    pkg_divide.ads:25:47: medium: overflow check might fail (e.g. when Divisor = -1073741824
+    and Quotient = 2 and Remainder = -1073741823)[#6]
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-08-12T14:21:50.901000'
+'2021-08-12T14:33:30.016000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    pkg_divide.ads:25:18: invalid argument in "First" attribute
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-08-12T14:33:30.016000'
+'2021-08-12T14:34:04.199000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    pkg_divide.ads:25:18: invalid argument in "First" attribute
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-08-12T14:34:04.199000'
+'2021-08-12T14:34:24.155000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    pkg_divide.adb:21:32: medium: precondition might fail, cannot prove First_Operand
+    <= Integer''Last - Second_Operand (e.g. when Quotient = Integer''Last)[#0]
+
+    pkg_divide.adb:25:35: medium: loop invariant might fail in first iteration, cannot
+    prove Remainder in 0..abs(Divisor) (e.g. when Divisor = 1 and Remainder = 2)[#4]
+
+    pkg_divide.adb:26:35: medium: loop invariant might fail in first iteration, cannot
+    prove Dividend = Remainder + Quotient * Divisor (e.g. when Dividend = -1 and Divisor
+    = 1 and Quotient = 1 and Remainder = 0)[#2]
+
+    pkg_divide.adb:26:35: medium: loop invariant might not be preserved by an arbitrary
+    iteration, cannot prove Dividend = Remainder + Quotient * Divisor (e.g. when Dividend
+    = 2 and Divisor = -2 and Quotient = 1 and Remainder = 0)[#3]
+
+    pkg_divide.adb:26:67: medium: overflow check might fail (e.g. when Divisor = -2
+    and Quotient = 3)[#1]
+
+    pkg_divide.ads:27:17: medium: postcondition might fail, cannot prove Dividend
+    = Divisor * Quotient + Remainder (e.g. when Dividend = -1 and Divisor = 1 and
+    Quotient = 1 and Remainder = 0)[#7]
+
+    pkg_divide.ads:27:36: medium: overflow check might fail (e.g. when Divisor = -1073741822
+    and Quotient = 1073741823)[#5]
+
+    pkg_divide.ads:27:47: medium: overflow check might fail (e.g. when Divisor = -1073741824
+    and Quotient = 2 and Remainder = -1073741823)[#6]
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-08-12T14:34:24.155000'
+'2021-08-12T14:35:44.170000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    pkg_divide.adb:21:32: medium: precondition might fail, cannot prove First_Operand
+    <= Integer''Last - Second_Operand (e.g. when Quotient = Integer''Last)[#0]
+
+    pkg_divide.adb:26:35: medium: loop invariant might fail in first iteration, cannot
+    prove Dividend = Remainder + Quotient * Divisor (e.g. when Dividend = -1 and Divisor
+    = 1 and Quotient = 1 and Remainder = 0)[#2]
+
+    pkg_divide.adb:26:35: medium: loop invariant might not be preserved by an arbitrary
+    iteration, cannot prove Dividend = Remainder + Quotient * Divisor (e.g. when Dividend
+    = 2 and Divisor = -2 and Quotient = 1 and Remainder = 0)[#3]
+
+    pkg_divide.adb:26:67: medium: overflow check might fail (e.g. when Divisor = -2
+    and Quotient = 3)[#1]
+
+    pkg_divide.ads:27:17: medium: postcondition might fail, cannot prove Dividend
+    = Divisor * Quotient + Remainder (e.g. when Dividend = -1 and Divisor = 1 and
+    Quotient = 1 and Remainder = 0)[#6]
+
+    pkg_divide.ads:27:36: medium: overflow check might fail (e.g. when Divisor = -1073741822
+    and Quotient = 1073741823)[#4]
+
+    pkg_divide.ads:27:47: medium: overflow check might fail (e.g. when Divisor = -1073741824
+    and Quotient = 2 and Remainder = -1073741823)[#5]
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-08-12T14:35:44.170000'
+'2021-08-12T14:36:48.587000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-08-12T14:36:48.587000'

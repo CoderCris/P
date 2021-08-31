@@ -1,0 +1,7 @@
+20210821100248
+-c
+-x
+ada
+-gnatA
+-gnatc
+-gnates=E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove\7980a9fb.tmp

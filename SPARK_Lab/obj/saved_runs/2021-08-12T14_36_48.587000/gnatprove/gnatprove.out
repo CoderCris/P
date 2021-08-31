@@ -1,0 +1,32 @@
+Summary of SPARK analysis
+=========================
+
+--------------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   CodePeer                      Provers   Justified   Unproved
+--------------------------------------------------------------------------------------------------------------
+Data Dependencies                 1           1          .                            .           .          .
+Flow Dependencies                 3           3          .                            .           .          .
+Initialization                    6           6          .                            .           .          .
+Non-Aliasing                      .           .          .                            .           .          .
+Run-time Checks                  31           .          .                    31 (CVC4)           .          .
+Assertions                        6           .          .                     6 (CVC4)           .          .
+Functional Contracts              7           .          .    7 (CVC4 73%, Trivial 27%)           .          .
+LSP Verification                  .           .          .                            .           .          .
+Termination                       2           .          .                     2 (CVC4)           .          .
+Concurrency                       .           .          .                            .           .          .
+--------------------------------------------------------------------------------------------------------------
+Total                            56    10 (18%)          .                     46 (82%)           .          .
+
+
+max steps used for successful proof: 1
+
+Analyzed 3 units
+in unit pkg_divide, 2 subprograms and packages out of 2 analyzed
+  Pkg_Divide at pkg_divide.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Pkg_Divide.Divide at pkg_divide.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (21 checks)
+in unit pkg_multiply, 2 subprograms and packages out of 2 analyzed
+  Pkg_Multiply at pkg_multiply.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Pkg_Multiply.Multiply at pkg_multiply.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (19 checks)
+in unit pkg_subtract, 2 subprograms and packages out of 2 analyzed
+  Pkg_Subtract at pkg_subtract.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Pkg_Subtract.Subtract at pkg_subtract.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (6 checks)

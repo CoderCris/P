@@ -1,0 +1,23 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\default.gpr
+20190923174626 12bece475f9182f1a2c584708ca16aa0
+[BOUND OBJECT FILES]
+E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\pkg_add.o
+E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\pkg_subtract.o
+E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\pkg_divide.o
+E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\tests_divide.o
+E:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LE:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\
+-LE:\home\UNI\P3\2021\1-verificacion\SPARK\SPARK_Lab\obj\
+-LC:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2020/lib/gcc/x86_64-pc-mingw32/9.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

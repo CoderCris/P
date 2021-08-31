@@ -1,0 +1,2 @@
+pkg_multiply.adb:14:30: medium: precondition might fail, cannot prove First_Operand <= Integer'Last - Second_Operand (e.g. when First_Operand = 1 and Result = Integer'Last) [possible explanation: loop at line 13 should mention Result in a loop invariant][#0]
+pkg_multiply.ads:28:15: medium: postcondition might fail, cannot prove Result = First_Operand * Second_Operand (e.g. when First_Operand = 2 and Result = 5 and Second_Operand = 3)[#1]

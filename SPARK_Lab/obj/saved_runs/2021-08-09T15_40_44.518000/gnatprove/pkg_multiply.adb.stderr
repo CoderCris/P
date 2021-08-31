@@ -1,0 +1,7 @@
+pkg_multiply.adb:2:09: warning: no entities of "Ada.Text_IO" are referenced
+pkg_multiply.adb:2:21: warning: use clause for package "Text_IO" has no effect
+pkg_multiply.adb:14:30: medium: precondition might fail, cannot prove First_Operand <= Integer'Last - Second_Operand (e.g. when First_Operand = 1 and Result = Integer'Last) [possible explanation: loop at line 13 should mention Result in a loop invariant][#0]
+pkg_multiply.ads:16:16: medium: overflow check might fail (e.g. when First_Operand = Integer'First and Second_Operand = -1)[#1]
+pkg_multiply.ads:16:51: medium: overflow check might fail (e.g. when Second_Operand = Integer'First)[#2]
+pkg_multiply.ads:19:16: medium: overflow check might fail (e.g. when First_Operand = Integer'First)[#3]
+pkg_multiply.ads:22:46: medium: overflow check might fail (e.g. when Second_Operand = Integer'First)[#4]
