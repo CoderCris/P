@@ -9,7 +9,7 @@ RN
 RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U searching_tests%b	searching_tests.adb	3b99dfa9 NE OO SU
+U searching_tests%b	searching_tests.adb	3c680f48 NE OO SU
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W searching%s		searching.adb		searching.ali
@@ -23,8 +23,8 @@ D a-textio.ads		20200228061810 aef4d56d ada.text_io%s
 D a-unccon.ads		20200228061810 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20200228061810 5ab55268 interfaces%s
 D i-cstrea.ads		20200228061810 e53d8b8e interfaces.c_streams%s
-D searching.ads		20210821082314 d4b8aed7 searching%s
-D searching_tests.adb	20210821082218 41d5a413 searching_tests%b
+D searching.ads		20210828153750 325ac6ca searching%s
+D searching_tests.adb	20210831120040 a0c61cef searching_tests%b
 D system.ads		20200228061810 32a08138 system%s
 D s-crtl.ads		20200228061810 0ebbdb71 system.crtl%s
 D s-exctab.ads		20200228061810 54135002 system.exception_table%s
@@ -44,19 +44,19 @@ X 1 ada.ads
 16K9*Ada 20e8 11|1r6 1r23
 X 6 a-textio.ads
 57K13*Text_IO 727e16 11|1w10 1r27
-465U14*Put 11|14s11 30s10
-508U14*Put_Line 11|16s11 20s7 21s7 32s10 36s7 37s7
+465U14*Put 11|14s11 61s10
+508U14*Put_Line 11|16s11 20s7 21s7 63s10 67s7 68s7
 X 10 searching.ads
-1K9*Searching 48e14 11|3w6 3r21
-3A9*T_Table(integer)<integer> 11|12r17 28r17
+1K9*Searching 52e14 11|3w6 3r21
+3A9*T_Table(integer)<integer> 11|12r17 59r18
 6V13*Minimum{integer} 11|15s26
-15V12*Pos_Minimum{natural} 11|31s25
+34V13*Binary_Search{integer} 11|62s25
 X 11 searching_tests.adb
-6U11*Searching_tests 6b11 47l5 47t20
-8U14 Min_test 8b14 23l8 23t16 44s4
+6U11*Searching_tests 6b11 81l5 81t20
+8U14 Min_test 8b14 23l8 23t16
 10U17 Test_1 10b17 17l11 17t17 22s6
 12a10 Table{10|3A9} 15r35
-25U14 Pos_Min_test 25b14 39l8 39t20 45s4
-27U17 Test_1 27b17 33l11 33t17 38s7
-28a10 Table{10|3A9} 31r37
+57U14 Binary_Search_test 57b14 71l8 71t26 79s4
+58U17 Test_1 58b17 64l11 64t17 69s7
+59a11 Table{10|3A9} 62r39
 

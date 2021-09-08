@@ -1,0 +1,8 @@
+searching.adb:67:26: medium: overflow check might fail (e.g. when high = Natural'Last and low = Natural'Last)[#0]
+searching.adb:72:19: medium: array index check might fail (e.g. when Table = (others => 1) and Table'First = 1 and Table'Last = 2 and mid = 0) [possible explanation: loop at line 70 should mention mid in a loop invariant][#5]
+searching.adb:73:24: medium: range check might fail (e.g. when mid = 0) [possible explanation: loop at line 70 should mention mid in a loop invariant][#1]
+searching.adb:74:23: medium: overflow check might fail (e.g. when high = 0 and low = 0)[#2]
+searching.adb:76:23: medium: overflow check might fail (e.g. when mid = Natural'Last) [possible explanation: loop at line 70 should mention mid in a loop invariant][#3]
+searching.adb:77:23: medium: overflow check might fail (e.g. when high = 0 and low = 1)[#4]
+searching.ads:44:46: medium: array index check might fail[#6]
+searching.ads:45:08: warning: postcondition does not mention function result

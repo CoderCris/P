@@ -30,23 +30,29 @@ package Searching with SPARK_Mode is
    --  --  Searchs for Value performing a linear search and returns
    --  --  its index in the given table; returns Integer'First if the
    --  --  specified value is not found in the table.
-   --
-   function Binary_Search
-     (Table : T_Table; Value : Integer) return Integer;
+--
+
    --  Searchs for Value performing a binary search and returns
    --  its index in the given table; returns Integer'First if the
    --  specified value is not found in the table.
+   function Binary_Search
+     (Table : T_Table; Value : Integer) return Integer
+     with
+       Global => null,
+       Depends => (Binary_Search'Result => (Table, Value)),
+       Pre => Table'Length > 0 and then
+       Table'First <= Natural'Last - Table'Last,
+       --and then
+       --    (for all J in Table'Range => Table(J-1) <= Table(J)),
+        Post => (Table(Binary_Search'Result) = Value or else
+                  Binary_Search'result = Table'First);
 
    --  function Binary_Search_Recursive
    --    (Table: T_Table; Value: Integer) return Integer;
 
 
 --
---         Global =>,
---         Depends =>,
---         Pre =>,
---         Pos =>;
---  --   Contract_case =>
+
 
 
 end Searching;

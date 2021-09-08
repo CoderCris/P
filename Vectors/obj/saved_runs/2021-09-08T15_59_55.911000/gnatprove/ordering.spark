@@ -1,0 +1,201 @@
+{
+  "spark": [
+    {
+      "name": "Ordering",
+      "sloc": [
+        {
+          "file": "ordering.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Ordering.Swap",
+      "sloc": [
+        {
+          "file": "ordering.ads",
+          "line": 5
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "ordering.ads",
+      "line": 9,
+      "col": 8,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "ordering.ads",
+      "line": 10,
+      "col": 8,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    }
+  ],
+  "session_map": {
+    " 1": "E:\\home\\UNI\\P3\\2021\\1-verificacion\\SPARK\\exercises\\Vectors\\obj\\gnatprove\\ordering__swap"
+  },
+  "proof": [
+    {
+      "file": "ordering.ads",
+      "line": 12,
+      "col": 16,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.ads",
+      "check_line": 12,
+      "check_col": 16,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Ordering",
+          "sloc": [
+            {
+              "file": "ordering.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "Ordering.Swap",
+          "sloc": [
+            {
+              "file": "ordering.ads",
+              "line": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Ordering.Swap",
+          "sloc": [
+            {
+              "file": "ordering.ads",
+              "line": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Ordering.Swap",
+          "sloc": [
+            {
+              "file": "ordering.ads",
+              "line": 5
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "codepeer results": 8.90000010258518E-05,
+    "init_why_sections": 7.97600019723177E-04,
+    "globals/properties (advanced)": 6.19900005403906E-04,
+    "gnatwhy3.run_vcs": 0.00000000000000E+00,
+    "flow analysis": 1.96889997459948E-03,
+    "marking": 3.58999997843057E-04,
+    "translation of standard": 5.28030004352331E-03,
+    "gnatwhy3.register_vcs": 0.00000000000000E+00,
+    "globals (basic)": 3.56000004103407E-04,
+    "gnatwhy3.schedule_vcs": 0.00000000000000E+00,
+    "gnatwhy3.save_session": 0.00000000000000E+00,
+    "gnatwhy3.init": 2.34375000000000E-01
+  }
+}

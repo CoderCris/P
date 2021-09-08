@@ -10,30 +10,31 @@ RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U searching%b		searching.adb		94f84ca1 NE OO PK
+U searching%b		searching.adb		169c6585 NE OO PK
 
-U searching%s		searching.ads		d4b8aed7 EE NE OO PK
+U searching%s		searching.ads		325ac6ca EE NE OO PK
 
-D searching.ads		20210821082314 d4b8aed7 searching%s
-D searching.adb		20210821082410 4040e276 searching%b
+D searching.ads		20210828153750 325ac6ca searching%s
+D searching.adb		20210831120956 24c6a34f searching%b
 D system.ads		20200228061810 32a08138 system%s
 G a e
 G c Z s b [minimum searching 6 13 none]
-G c Z s b [pos_minimum searching 15 12 none]
+G c Z s b [binary_search searching 34 13 none]
 G c Z s s [t_tableIP searching 3 9 none]
 X 1 searching.ads
-1K9*Searching 48l5 48e14 2|1b14 56l5 56t14
-3A9*T_Table(integer)<integer> 6r30 15r33 2|3r30 23r34
-6V13*Minimum{integer} 6>22 10r20 12r46 2|3b13 20l8 20t15
-6a22 Table{3A9} 10r38 11r15 12r31 12r63 2|3b22 6r27 6r33 9r16 10r13 11r23
-. 15r26 16r15
-12i26 J{integer} 12r69
-15V12*Pos_Minimum{natural} 15>25 2|23b13 36l8 36t19
-15a25 Table{3A9} 2|23b26 26r27 27r22 29r18 30r13 30r24
+1K9*Searching 52l5 52e14 2|1b14 85l5 85t14
+3A9*T_Table(integer)<integer> 6r30 35r15 2|3r30 64r14
+6V13*Minimum{integer} 6>22 10r20 12r45 2|3b13 23l8 23t15
+6a22 Table{3A9} 10r38 11r15 12r30 12r63 2|3b22 12r16 13r13 14r23 18r26 19r15
+12i25 J{integer} 12r69
+34V13*Binary_Search{integer} 35>7 35>24 2|63b13 83l8 83t21
+35a7 Table{3A9} 2|64b7 65r24 66r25 72r13 75r16 82r14
+35i24 Value{integer} 2|64b23 72r26 75r29
 X 2 searching.adb
-6i7 minVal{natural} 10r24 11m13 16r27 19r14
-9i11 J{integer} 10r19 11r29 15r41
-15i21 K{integer} 16r21
-26i7 minPos{integer} 30r30 31m13 35r14
-27i7 J{integer} 29r13 30r19 31r22 33m10 33r15
+6i7 minVal{integer} 13r24 14m13 19r27 22r14
+12i11 J{integer} 13r19 14r29 18r41
+18i21 K{integer} 19r21
+65i7 low{natural} 67r23 70r13 74r20 76m13 77r20
+66i7 high{natural} 67r27 70r20 73m13 74r24 77r24
+67i7 mid{natural} 72r19 73r21 74m13 75r22 76r20 77m13 79r20
 

@@ -55,13 +55,37 @@ package body Searching with SPARK_Mode is
    --  --  its index in the given table; returns Integer'First if the
    --  --  specified value is not found in the table.
    --
-   --  function Binary_Search
-   --    (Table : T_Table; Value : Integer) return Integer;
-   --  --  Searchs for Value performing a binary search and returns
-   --  --  its index in the given table; returns Integer'First if the
-   --  --  specified value is not found in the table.
    --
    --  function Binary_Search_Recursive
    --    (Table: T_Table; Value: Integer) return Integer;
    --
+
+   function Binary_Search
+     (Table: T_Table; Value: Integer) return Integer is
+      low : natural := Table'First;
+      high : natural := Table'Last;
+      mid: natural := low+high/2;
+   begin
+
+      while low <= high loop
+         --if Table(mid) = Value return mid;
+         if Table(mid) > Value then
+            high := mid-1;
+            mid := low+high/2;
+         elsif Table(mid) < Value then
+            low := mid+1;
+            mid := low+high/2;
+         else
+            return mid;
+         end if;
+
+         pragma Loop_Variant(Decreases => high);
+         pragma Loop_Variant(Increases => low);
+         pragma Loop_Invariant( mid >= low);
+         pragma Loop_Invariant(mid <= high);
+         pragma Loop_Invariant(low <= high);
+      end loop;
+      return Table'First;
+   end Binary_Search;
+
 end Searching;

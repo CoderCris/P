@@ -1,4 +1,4 @@
-'2021-08-28T15:21:45.284000':
+'2021-09-08T13:45:29.043000':
   category: GNATprove
   files:
   - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
@@ -7,12 +7,229 @@
 
     Phase 2 of 2: flow analysis and proof ...
 
-    searching.ads:24:17: medium: postcondition might fail, cannot prove Table(Pos_Minimum''Result)
-    <= Table(J) (e.g. when J = 1 and Pos_Minimum''Result = 0 and Table = (0 => 0,
-    others => -1) and Table''First = 0 and Table''Last = 1)[#0]
+    searching.adb:72:19: medium: array index check might fail (e.g. when Table = (others
+    => 2) and Table''First = 2 and Table''Last = 2 and mid = 3)[#3]
+
+    searching.adb:73:24: medium: range check might fail (e.g. when mid = 0)[#0]
+
+    searching.adb:74:23: medium: overflow check might fail (e.g. when high = Natural''Last-2
+    and low = 1431655765 and mid = Natural''Last-1)[#1]
+
+    searching.adb:77:23: medium: overflow check might fail (e.g. when high = 1431655766
+    and low = 1431655765 and mid = 1431655764)[#2]
+
+    searching.adb:82:10: medium: loop variant might fail (e.g. when high = 6)[#6]
+
+    searching.adb:83:10: medium: loop variant might fail (e.g. when low = 0)[#7]
+
+    searching.adb:85:32: medium: loop invariant might fail in first iteration, cannot
+    prove mid <= high (e.g. when high = 2 and mid = 3)[#4]
+
+    searching.adb:85:32: medium: loop invariant might not be preserved by an arbitrary
+    iteration, cannot prove mid <= high (e.g. when high = 2 and mid = 3)[#5]
 
     Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove\gnatprove.out
 
     '
   output_parser: GNATprove_Parser
-  timestamp: '2021-08-28T15:21:45.284000'
+  timestamp: '2021-09-08T13:45:29.043000'
+'2021-09-08T13:47:33.984000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    searching.adb:72:19: medium: array index check might fail (e.g. when Table = (others
+    => 2) and Table''First = 2 and Table''Last = 2 and mid = 3)[#3]
+
+    searching.adb:73:24: medium: range check might fail (e.g. when mid = 0)[#0]
+
+    searching.adb:74:23: medium: overflow check might fail (e.g. when high = Natural''Last-2
+    and low = 1431655765 and mid = Natural''Last-1)[#1]
+
+    searching.adb:77:23: medium: overflow check might fail (e.g. when high = 1431655766
+    and low = 1431655765 and mid = 1431655764)[#2]
+
+    searching.adb:82:10: medium: loop variant might fail (e.g. when high = 6)[#6]
+
+    searching.adb:83:10: medium: loop variant might fail (e.g. when low = 0)[#7]
+
+    searching.adb:85:32: medium: loop invariant might fail in first iteration, cannot
+    prove mid <= high (e.g. when high = 2 and mid = 3)[#4]
+
+    searching.adb:85:32: medium: loop invariant might not be preserved by an arbitrary
+    iteration, cannot prove mid <= high (e.g. when high = 2 and mid = 3)[#5]
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-08T13:47:33.984000'
+'2021-09-08T15:52:59.407000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    ordering.ads:11:14: missing operand
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-08T15:52:59.407000'
+'2021-09-08T15:53:09.717000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    ordering.ads:10:20: dependency clause contains extra parentheses
+
+    ordering.ads:10:30: dependency clause contains extra parentheses
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-08T15:53:09.717000'
+'2021-09-08T15:53:53.110000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-08T15:53:53.110000'
+'2021-09-08T15:54:05.096000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-08T15:54:05.096000'
+'2021-09-08T15:59:18.898000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    ordering.ads:25:08: parameter "Table" is missing from output dependence list
+
+    ordering.ads:25:20: attribute "Result" can only appear in postcondition of function
+
+    ordering.ads:28:17: "Tbale" is undefined
+
+    ordering.ads:28:17: possible misspelling of "Table"
+
+    ordering.ads:31:37: "Pos2" is undefined
+
+    ordering.ads:31:37: possible misspelling of "Pos_2"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-08T15:59:18.898000'
+'2021-09-08T15:59:46.254000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    ordering.ads:28:17: "Tbale" is undefined
+
+    ordering.ads:28:17: possible misspelling of "Table"
+
+    ordering.ads:31:37: "Pos2" is undefined
+
+    ordering.ads:31:37: possible misspelling of "Pos_2"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-08T15:59:46.254000'
+'2021-09-08T15:59:55.911000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    ordering.ads:31:37: "Pos2" is undefined
+
+    ordering.ads:31:37: possible misspelling of "Pos_2"
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-08T15:59:55.911000'
+'2021-09-08T16:00:09.163000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    ordering.ads:25:20: medium: missing self-dependency "Table => Table" (array bounds
+    are preserved)[#0]
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-08T16:00:09.163000'
+'2021-09-08T16:00:26.452000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-08T16:00:26.452000'
+'2021-09-08T16:03:31.531000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    ordering.ads:38:14: missing operand
+
+    ordering.ads:39:15: missing operand
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-08T16:03:31.531000'

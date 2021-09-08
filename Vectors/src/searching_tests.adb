@@ -19,7 +19,7 @@ procedure Searching_tests is
    begin
       Put_Line(" ");
       Put_Line("--------------- Minimum Tests --------------");
-     Test_1;
+      Test_1;
    end Min_test;
 
    --  procedure Pos_Min_test is
@@ -38,25 +38,29 @@ procedure Searching_tests is
    --     Test_1;
    --  end Pos_Min_test;
 
-   procedure Linear_Search_test is
-      procedure Test_1 is
-         Table: T_Table (1 .. 5) := (0, 1, 2, 3, 4);
-      begin
-         Put ("Test_1: Minimum ......................... ");
-         pragma Assert (Minimum (Table) = 0);
-         Put_Line ("OK");
-      end Test_1;
-
-   begin
-      Put_Line(" ");
-      Put_Line("--------------- Linear Search Tests --------------");
-      Test_1;
-   end Linear_Search_test;
+   --  procedure Linear_Search_test is
+   --     procedure Test_1 is
+   --        Table: T_Table (1 .. 5) := (0, 1, 2, 3, 4);
+   --     begin
+   --        Put ("Test_1:  ......................... ");
+   --        pragma Assert (Linear_Search(Table, 2) = 2);
+   --        Put_Line ("OK");
+   --     end Test_1;
+   --
+   --  begin
+   --     Put_Line(" ");
+   --     Put_Line("--------------- Linear Search Tests --------------");
+   --     Test_1;
+   --  end Linear_Search_test;
 
 
    procedure Binary_Search_test is
       procedure Test_1 is
+          Table: T_Table (1 .. 5) := (0, 1, 2, 3, 4);
       begin
+         Put ("Test_1:  ......................... ");
+         pragma Assert (Binary_Search(Table, 2) = 2);
+         Put_Line ("OK");
       end Test_1;
 
    begin
@@ -72,5 +76,6 @@ begin
 
    -- Min_test;
    -- Pos_Min_test;
+   Binary_Search_test;
 
 end Searching_tests;

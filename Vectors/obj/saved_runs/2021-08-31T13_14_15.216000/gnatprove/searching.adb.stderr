@@ -1,0 +1,1 @@
+searching.ads:24:17: medium: postcondition might fail, cannot prove Table(Pos_Minimum'Result) <= Table(J) (e.g. when J = 1 and Pos_Minimum'Result = 0 and Table = (0 => 0, others => -1) and Table'First = 0 and Table'Last = 1)[#0]

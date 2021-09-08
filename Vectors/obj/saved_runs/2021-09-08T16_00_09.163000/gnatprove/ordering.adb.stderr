@@ -1,0 +1,1 @@
+ordering.ads:25:20: medium: missing self-dependency "Table => Table" (array bounds are preserved)[#0]
