@@ -28,7 +28,7 @@ package Ordering with SPARK_Mode is
        Pos_2 in Table'Range and then
        Pos_1 /= Pos_2,
        Post => Table(Pos_2) = Table'Old(Pos_1) and then
-           Table(Pos_1) = Table'Old(Pos_2);
+           Table (Pos_1) = Table'Old(Pos_2);
   
       --  Sort the table using the bubble algorithm
    procedure Bubble_Sort (Table : in out T_Table)
