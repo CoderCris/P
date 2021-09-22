@@ -1,0 +1,3 @@
+ordering.adb:47:35: medium: loop invariant might not be preserved by an arbitrary iteration, cannot prove Table(I)>=Table(I+1) (e.g. when I = 1 and Table = (0 => 0, 2 => 0, others => -1))[#0]
+ordering.adb:47:35: medium: loop invariant might fail in first iteration, cannot prove Table(I)>=Table(I+1) (e.g. when I = 0 and Table = (1 => 1, others => 0))[#1]
+ordering.ads:39:16: medium: postcondition might fail (e.g. when Table = (others => 0) and Table'First = 0 and Table'Last = 0) [possible explanation: loop at ordering.adb:36 should mention Table in a loop invariant][#2]

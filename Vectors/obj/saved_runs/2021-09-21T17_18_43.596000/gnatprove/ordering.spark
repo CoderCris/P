@@ -1,0 +1,1732 @@
+{
+  "spark": [
+    {
+      "name": "Ordering",
+      "sloc": [
+        {
+          "file": "ordering.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Ordering.Swap",
+      "sloc": [
+        {
+          "file": "ordering.ads",
+          "line": 7
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Ordering.Swap",
+      "sloc": [
+        {
+          "file": "ordering.ads",
+          "line": 19
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Ordering.Bubble_Sort",
+      "sloc": [
+        {
+          "file": "ordering.ads",
+          "line": 34
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "ordering.adb",
+      "line": 19,
+      "col": 9,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 19
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "ordering.ads",
+      "line": 24,
+      "col": 8,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 19
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "ordering.ads",
+      "line": 25,
+      "col": 8,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 19
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "ordering.adb",
+      "line": 29,
+      "col": 7,
+      "rule": "INEFFECTIVE",
+      "severity": "warning",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "ordering__flow__0.trace",
+      "msg_id": 0,
+      "how_proved": "flow"
+    },
+    {
+      "file": "ordering.ads",
+      "line": 36,
+      "col": 8,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "ordering.ads",
+      "line": 37,
+      "col": 8,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "ordering.ads",
+      "line": 11,
+      "col": 8,
+      "rule": "GLOBAL_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    },
+    {
+      "file": "ordering.ads",
+      "line": 12,
+      "col": 8,
+      "rule": "DEPENDS_WRONG",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "how_proved": "flow"
+    }
+  ],
+  "session_map": {
+    " 1": "E:\\home\\UNI\\P3\\2021\\1-verificacion\\SPARK\\exercises\\Vectors\\obj\\gnatprove\\ordering__swap",
+    " 2": "E:\\home\\UNI\\P3\\2021\\1-verificacion\\SPARK\\exercises\\Vectors\\obj\\gnatprove\\ordering__swap__2",
+    " 3": "E:\\home\\UNI\\P3\\2021\\1-verificacion\\SPARK\\exercises\\Vectors\\obj\\gnatprove\\ordering__bubble_sort"
+  },
+  "proof": [
+    {
+      "file": "ordering.ads",
+      "line": 14,
+      "col": 16,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.ads",
+      "check_line": 14,
+      "check_col": 16,
+      "session_dir": 1,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 21,
+      "col": 20,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 19
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 21,
+      "check_col": 20,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 22,
+      "col": 29,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 19
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 22,
+      "check_col": 29,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 22,
+      "col": 13,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 19
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 22,
+      "check_col": 13,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 23,
+      "col": 13,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 19
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 23,
+      "check_col": 13,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "ordering.ads",
+      "line": 30,
+      "col": 22,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 19
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.ads",
+      "check_line": 30,
+      "check_col": 22,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "ordering.ads",
+      "line": 30,
+      "col": 41,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 19
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.ads",
+      "check_line": 30,
+      "check_col": 41,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "ordering.ads",
+      "line": 31,
+      "col": 19,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 19
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.ads",
+      "check_line": 31,
+      "check_col": 19,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "ordering.ads",
+      "line": 31,
+      "col": 38,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 19
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.ads",
+      "check_line": 31,
+      "check_col": 38,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "ordering.ads",
+      "line": 30,
+      "col": 16,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Swap",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 19
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.ads",
+      "check_line": 30,
+      "check_col": 16,
+      "session_dir": 2,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 40,
+      "col": 31,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 40,
+      "check_col": 31,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 41,
+      "col": 35,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 41,
+      "check_col": 35,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 41,
+      "col": 35,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 41,
+      "check_col": 35,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 41,
+      "col": 22,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 41,
+      "check_col": 22,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 42,
+      "col": 23,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 13,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 42,
+      "check_col": 23,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 42,
+      "col": 23,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 42,
+      "check_col": 23,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 39,
+      "col": 22,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 39,
+      "check_col": 22,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 39,
+      "col": 34,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 26,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 39,
+      "check_col": 34,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 39,
+      "col": 34,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 20,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 39,
+      "check_col": 34,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.adb",
+      "line": 38,
+      "col": 44,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.adb",
+      "check_line": 38,
+      "check_col": 44,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.ads",
+      "line": 40,
+      "col": 54,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.ads",
+      "check_line": 40,
+      "check_col": 54,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.ads",
+      "line": 40,
+      "col": 66,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.ads",
+      "check_line": 40,
+      "check_col": 66,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.ads",
+      "line": 43,
+      "col": 54,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.ads",
+      "check_line": 43,
+      "check_col": 54,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.ads",
+      "line": 43,
+      "col": 65,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.ads",
+      "check_line": 43,
+      "check_col": 65,
+      "session_dir": 3,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "ordering.ads",
+      "line": 39,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "Ordering.Bubble_Sort",
+        "sloc": [
+          {
+            "file": "ordering.ads",
+            "line": 34
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 135,
+              "time": 5.00000000000000E-02
+            },
+            "CVC4_CE": {
+              "result": "Unknown (unknown)",
+              "steps": 153,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (unknown)",
+              "steps": 302,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "ordering.ads",
+      "check_line": 39,
+      "check_col": 14,
+      "cntexmp": {
+        "ordering.adb": {
+          "previous": {
+          },
+          "current": {
+            "28": [
+              {
+                "name": "sorted",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "29": [
+              {
+                "name": "pivot",
+                "value": "0",
+                "kind": "variable"
+              }
+            ],
+            "32": [
+              {
+                "name": "Table'Last",
+                "value": "0",
+                "kind": "variable"
+              }
+            ],
+            "33": [
+              {
+                "name": "sorted",
+                "value": "True",
+                "kind": "variable"
+              }
+            ],
+            "36": [
+              {
+                "name": "Table",
+                "value": "(others => 0)",
+                "kind": "variable"
+              },
+              {
+                "name": "pivot",
+                "value": "0",
+                "kind": "variable"
+              },
+              {
+                "name": "sorted",
+                "value": "True",
+                "kind": "variable"
+              }
+            ],
+            "37": [
+              {
+                "name": "sorted",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "38": [
+              {
+                "name": "I",
+                "value": "0",
+                "kind": "variable"
+              },
+              {
+                "name": "Table",
+                "value": "(others => 0)",
+                "kind": "variable"
+              },
+              {
+                "name": "pivot",
+                "value": "0",
+                "kind": "variable"
+              },
+              {
+                "name": "sorted",
+                "value": "False",
+                "kind": "variable"
+              }
+            ],
+            "39": [
+              {
+                "name": "I",
+                "value": "0",
+                "kind": "variable"
+              }
+            ]
+          }
+        },
+        "ordering.ads": {
+          "previous": {
+          },
+          "current": {
+            "34": [
+              {
+                "name": "Table",
+                "value": "(others => 0)",
+                "kind": "variable"
+              },
+              {
+                "name": "Table'First",
+                "value": "0",
+                "kind": "variable"
+              },
+              {
+                "name": "Table'Last",
+                "value": "0",
+                "kind": "variable"
+              }
+            ],
+            "39": [
+              {
+                "name": "Table",
+                "value": "(others => 0)",
+                "kind": "variable"
+              },
+              {
+                "name": "Table'First",
+                "value": "0",
+                "kind": "variable"
+              },
+              {
+                "name": "Table'Last",
+                "value": "0",
+                "kind": "variable"
+              }
+            ]
+          }
+        }
+      },
+      "msg_id": 1,
+      "session_dir": 3,
+      "how_proved": "prover"
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "Ordering.Swap",
+          "sloc": [
+            {
+              "file": "ordering.ads",
+              "line": 19
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Ordering.Swap",
+          "sloc": [
+            {
+              "file": "ordering.ads",
+              "line": 19
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Ordering.Swap",
+          "sloc": [
+            {
+              "file": "ordering.ads",
+              "line": 19
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "Ordering.Swap",
+          "sloc": [
+            {
+              "file": "ordering.ads",
+              "line": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Ordering.Swap",
+          "sloc": [
+            {
+              "file": "ordering.ads",
+              "line": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Ordering.Swap",
+          "sloc": [
+            {
+              "file": "ordering.ads",
+              "line": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "Ordering",
+          "sloc": [
+            {
+              "file": "ordering.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "gnatwhy3.transformations.inline_trivial": 7.81250000000000E-01,
+    "codepeer results": 6.69099972583354E-04,
+    "init_why_sections": 1.13540003076196E-03,
+    "gnatwhy3.transformations.detect_polymorphism": 1.56250000000000E-02,
+    "globals/properties (advanced)": 3.34749999456108E-03,
+    "gnatwhy3.transformations.eliminate_literal": 1.56250000000000E-02,
+    "gnatwhy3.run_vcs": 1.09375000000000E-01,
+    "gnatwhy3.transformations.eliminate_algebraic_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_definition_if_poly": 0.00000000000000E+00,
+    "flow analysis": 9.71429981291294E-03,
+    "gnatwhy3.transformations.simplify_formula": 3.12500000000000E-02,
+    "marking": 3.93299997085705E-04,
+    "translation of standard": 9.69109963625669E-03,
+    "gnatwhy3.register_vcs": 1.25000000000000E-01,
+    "gnatwhy3.transformations.eliminate_epsilon": 1.56250000000000E-02,
+    "globals (basic)": 6.91100023686886E-04,
+    "gnatwhy3.schedule_vcs": 0.00000000000000E+00,
+    "gnatwhy3.transformations.prepare_for_counterexmp": 0.00000000000000E+00,
+    "gnatwhy3.save_session": 1.56250000000000E-02,
+    "gnatwhy3.transformations.eliminate_inductive": 0.00000000000000E+00,
+    "gnatwhy3.transformations.encoding_smt_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.transformations.eliminate_unused_hypo": 3.12500000000000E-02,
+    "gnatwhy3.transformations.eliminate_builtin": 0.00000000000000E+00,
+    "gnatwhy3.transformations.discriminate_if_poly": 0.00000000000000E+00,
+    "gnatwhy3.init": 1.81250000000000E+00
+  }
+}

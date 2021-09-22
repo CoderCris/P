@@ -1,14 +1,162 @@
-'2021-09-11T16:38:08.858000':
+'2021-09-22T17:34:10.782000':
   category: GNATprove
   files:
   - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
   label: Basic Prove File
   output: 'Phase 1 of 2: generation of Global contracts ...
 
-    ordering.ads:39:38: missing operand
+    ordering.adb:46:35: missing operand
 
     gnatprove: error during generation of Global contracts
 
     '
   output_parser: GNATprove_Parser
-  timestamp: '2021-09-11T16:38:08.858000'
+  timestamp: '2021-09-22T17:34:10.782000'
+'2021-09-22T17:34:35.591000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    ordering.adb:47:35: medium: loop invariant might not be preserved by an arbitrary
+    iteration, cannot prove Table(I)>=Table(I+1) (e.g. when I = 1 and Table = (0 =>
+    0, 2 => 0, others => -1))[#0]
+
+    ordering.adb:47:35: medium: loop invariant might fail in first iteration, cannot
+    prove Table(I)>=Table(I+1) (e.g. when I = 0 and Table = (1 => 1, others => 0))[#1]
+
+    ordering.ads:39:16: medium: postcondition might fail (e.g. when Table = (others
+    => 0) and Table''First = 0 and Table''Last = 0) [possible explanation: loop at
+    ordering.adb:36 should mention Table in a loop invariant][#2]
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-22T17:34:35.591000'
+'2021-09-22T17:35:16.202000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    ordering.ads:39:16: medium: postcondition might fail (e.g. when Table = (others
+    => 0) and Table''First = 0 and Table''Last = 0) [possible explanation: loop at
+    ordering.adb:36 should mention Table in a loop invariant][#0]
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-22T17:35:16.202000'
+'2021-09-22T17:38:09.052000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    ordering.adb:49:35: medium: loop invariant might fail in first iteration (e.g.
+    when Table = (0 => -2, 1 => -1, others => 0) and Table''First = 0 and Table''Last
+    = 1 and pivot = -1)[#2]
+
+    ordering.adb:49:35: medium: loop invariant might not be preserved by an arbitrary
+    iteration (e.g. when Table = (2 => -1, others => -2) and Table''First = 0 and
+    Table''Last = 2 and pivot = -1)[#3]
+
+    ordering.adb:49:81: medium: "pivot" might not be initialized[#0]
+
+    ordering.adb:49:81: medium: array index check might fail (e.g. when Table''First
+    = 0 and pivot = -1)[#1]
+
+    ordering.ads:39:16: medium: postcondition might fail (e.g. when Table = (others
+    => 0) and Table''First = 0 and Table''Last = 0) [possible explanation: loop at
+    ordering.adb:36 should mention Table in a loop invariant][#4]
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-22T17:38:09.052000'
+'2021-09-22T17:38:40.549000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    ordering.adb:49:35: medium: loop invariant might fail in first iteration (e.g.
+    when Table = (0 => -2, 1 => -1, others => 0) and Table''First = 0 and Table''Last
+    = 1 and pivot = -1)[#2]
+
+    ordering.adb:49:35: medium: loop invariant might not be preserved by an arbitrary
+    iteration (e.g. when Table = (2 => -1, others => -2) and Table''First = 0 and
+    Table''Last = 2 and pivot = -1)[#3]
+
+    ordering.adb:49:81: medium: "pivot" might not be initialized[#0]
+
+    ordering.adb:49:81: medium: array index check might fail (e.g. when Table''First
+    = 0 and pivot = -1)[#1]
+
+    ordering.ads:39:16: medium: postcondition might fail (e.g. when Table = (others
+    => 0) and Table''First = 0 and Table''Last = 0) [possible explanation: loop at
+    ordering.adb:36 should mention Table in a loop invariant][#4]
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-22T17:38:40.549000'
+'2021-09-22T17:39:50.854000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    ordering.adb:29:31: "First" is undefined
+
+    gnatprove: error during generation of Global contracts
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-22T17:39:50.854000'
+'2021-09-22T17:40:10.008000':
+  category: GNATprove
+  files:
+  - E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove
+  label: Basic Prove File
+  output: 'Phase 1 of 2: generation of Global contracts ...
+
+    Phase 2 of 2: flow analysis and proof ...
+
+    ordering.adb:49:35: medium: loop invariant might fail in first iteration (e.g.
+    when Table = (0 => -2, 1 => -1, others => 0) and Table''First = 0 and Table''Last
+    = 1 and pivot = -1)[#1]
+
+    ordering.adb:49:35: medium: loop invariant might not be preserved by an arbitrary
+    iteration (e.g. when Table = (2 => -1, others => -2) and Table''First = 0 and
+    Table''Last = 2 and pivot = -1)[#2]
+
+    ordering.adb:49:81: medium: array index check might fail (e.g. when Table''First
+    = 0 and pivot = -1)[#0]
+
+    ordering.ads:39:16: medium: postcondition might fail (e.g. when Table = (others
+    => 0) and Table''First = 0 and Table''Last = 0) [possible explanation: loop at
+    ordering.adb:36 should mention Table in a loop invariant][#3]
+
+    Summary logged in E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\obj\gnatprove\gnatprove.out
+
+    '
+  output_parser: GNATprove_Parser
+  timestamp: '2021-09-22T17:40:10.008000'

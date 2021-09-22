@@ -36,7 +36,11 @@ package Ordering with SPARK_Mode is
        Global => null,
        Depends => (Table => Table),
        Pre => true,
-       Post => (for all J in Table =>  ;
+       Post => (for all J in Table'Range =>
+                (for all X in J..Table'Last => Table(X) >= Table(J)))
+     and then 
+       (for some J in Table'Range =>
+                 (for some X in Table'Range => Table(J) = Table(X)));
 
    --  
    --  procedure Selection_Sort (Table : in out T_Table);

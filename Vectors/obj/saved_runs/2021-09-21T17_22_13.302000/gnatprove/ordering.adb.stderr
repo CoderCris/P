@@ -1,0 +1,1 @@
+ordering.ads:39:14: medium: postcondition might fail (e.g. when Table = (others => 0) and Table'First = 0 and Table'Last = 0) [possible explanation: loop at ordering.adb:36 should mention Table in a loop invariant][#0]

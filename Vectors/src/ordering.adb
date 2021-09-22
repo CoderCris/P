@@ -26,7 +26,7 @@ package body Ordering with SPARK_Mode is
    procedure Bubble_Sort (Table : in out T_Table) is
 
       sorted: Boolean := False;
-      pivot: Integer := 0;
+      pivot: Integer := Table'First;
    begin
 
       if Table'Length < 2 then
@@ -42,6 +42,11 @@ package body Ordering with SPARK_Mode is
                Table(I+1) := pivot;
                sorted := False;
             end if;
+
+            --  pragma Loop_Invariant();
+            pragma Loop_Invariant(Table(I)<=Table(I+1));
+
+            pragma Loop_Invariant(for some J in Table'Range => Table(J) = Table(pivot));
          end loop;
       end loop;
    end Bubble_Sort;

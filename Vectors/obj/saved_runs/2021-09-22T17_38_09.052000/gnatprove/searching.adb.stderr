@@ -1,0 +1,8 @@
+searching.adb:72:19: medium: array index check might fail (e.g. when Table = (others => 2) and Table'First = 2 and Table'Last = 2 and mid = 3)[#3]
+searching.adb:73:24: medium: range check might fail (e.g. when mid = 0)[#0]
+searching.adb:74:23: medium: overflow check might fail (e.g. when high = Natural'Last-2 and low = 1431655765 and mid = Natural'Last-1)[#1]
+searching.adb:77:23: medium: overflow check might fail (e.g. when high = 1431655766 and low = 1431655765 and mid = 1431655764)[#2]
+searching.adb:82:10: medium: loop variant might fail (e.g. when high = 6)[#6]
+searching.adb:83:10: medium: loop variant might fail (e.g. when low = 0)[#7]
+searching.adb:85:32: medium: loop invariant might fail in first iteration, cannot prove mid <= high (e.g. when high = 2 and mid = 3)[#4]
+searching.adb:85:32: medium: loop invariant might not be preserved by an arbitrary iteration, cannot prove mid <= high (e.g. when high = 2 and mid = 3)[#5]

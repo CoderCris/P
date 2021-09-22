@@ -1,0 +1,28 @@
+Summary of SPARK analysis
+=========================
+
+---------------------------------------------------------------------------------------------
+SPARK Analysis results        Total       Flow   CodePeer      Provers   Justified   Unproved
+---------------------------------------------------------------------------------------------
+Data Dependencies                 3          3          .            .           .          .
+Flow Dependencies                 3          3          .            .           .          .
+Initialization                    2          1          .            .           .          1
+Non-Aliasing                      .          .          .            .           .          .
+Run-time Checks                  27          .          .    26 (CVC4)           .          1
+Assertions                        4          .          .     2 (CVC4)           .          2
+Functional Contracts              3          .          .     2 (CVC4)           .          1
+LSP Verification                  .          .          .            .           .          .
+Termination                       .          .          .            .           .          .
+Concurrency                       .          .          .            .           .          .
+---------------------------------------------------------------------------------------------
+Total                            42    7 (17%)          .     30 (71%)           .    5 (12%)
+
+
+max steps used for successful proof: 1
+
+Analyzed 1 unit
+in unit ordering, 4 subprograms and packages out of 4 analyzed
+  Ordering at ordering.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  Ordering.Bubble_Sort at ordering.ads:34 flow analyzed (0 errors, 1 checks and 0 warnings) and not proved, 20 checks out of 24 proved
+  Ordering.Swap at ordering.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (1 checks)
+  Ordering.Swap at ordering.ads:19 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (9 checks)
