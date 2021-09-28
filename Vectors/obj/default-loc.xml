@@ -1,14 +1,65 @@
 <?xml version="1.0"?>
 <Locations >
-  <Project>
-    <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_file>
+  <Project >
     <file_marker column=" 38" line=" 39" >
       <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
       <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\ordering.ads</vfs_file>
     </file_marker>
-    <file_marker current="true" column=" 1" line=" 35" >
+    <file_marker column=" 1" line=" 35" >
       <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
       <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\ordering.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 12" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\ordering.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 46" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\ordering.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 35" line=" 47" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\ordering.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 39" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\ordering.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 49" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\ordering.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 47" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\ordering.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 49" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\ordering.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 36" line=" 29" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\ordering.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 49" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\ordering.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 50" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\ordering.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\searching.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\searching_tests.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\default.gpr</vfs_project>
+      <vfs_file>E:\home\UNI\P3\2021\1-verificacion\SPARK\exercises\Vectors\src\searching.adb</vfs_file>
     </file_marker>
   </Project>
 </Locations>
